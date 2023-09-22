@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Rutas y Estimacion de Cableado</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeGJJ9P6X06vBoCxrkai1hw28SylTTzsY&callback=initMap" async defer></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+  </head>
+<body>
+  <div class="header"></div>
+<div class="img-container">
+  <img src="imagen/ice.png" alt="Imagen de Cableado" style="width: 250px;">
+</div>
+
+ 
+ 
+
+    <form>
+      <label for="route" style="color: white;">Agregar Ruta:</label>
+
+        
+        <input type="text" id="route" placeholder="Ej. 40.7128, -74.0060" required>
+        <button type="button" id="agregar" onclick="addRoute()">Agregar Ruta</button>
+        
+        <button type="button" id="calcular" onclick="calculateDistanceAndShortestPath()">Calcular</button>
+        <button type="button" id="limpiar" onclick="clearRoutesAndCoordinates()">Limpiar</button>
+        
+      </form>
+      
+  </div>  
+    <div id="map" style="height: 450px; width: 100%;"></div>
+    
+    <div id="info" style="display: none;">
+      <p>Distancia total: <span id="distance">Calculando...</span></p>
+      <p>Cantidad aproximada de cable: <span id="fiberCable">Calculando...</span></p>
+    </div>
+    
+
+    <script type="text/javascript" src="js/script.js"></script>
+ 
+   
+</body>
+</html>

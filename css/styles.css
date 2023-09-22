@@ -1,0 +1,215 @@
+:root{
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: var(--font-mono);
+    margin: 0;
+    padding: 0;
+    background-color: #1b43c7;
+}
+
+section{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+section h1{
+    font-size: 3em;
+}
+
+section h2{
+    text-align:center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 2.5em
+}
+
+section form{
+    padding: 1.5em;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,.1);
+    margin-top: 30px;
+    background-color: #fcfcfd;
+}
+
+section form label{
+    width: 100%;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+   
+}
+
+section form input{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: #003DFF;
+    background-color: #eee;
+}
+
+section form input[type='submit'] {
+    margin-top: 1.5em;
+    margin-right: 0.5em; /* Agrega margen a la derecha del botón */
+    background-color: #003DFF;
+    color: #fff;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    font-size: 1em;
+}
+
+section form input[type='submit']:active {
+    transform: scale(0.97);
+}
+
+
+section p{
+    margin-top: 1.5em;
+
+}
+
+
+section p a{
+    text-decoration: none;
+    color: #003DFF;
+}
+
+
+/* Home */
+
+section button{
+    background-color: #003DFF;
+    color: #fff;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    font-size: 1em;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+  }
+  
+/* Estilos para el encabezado (header) */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1b43c7;
+    margin-bottom: 20px;
+  }
+
+
+  
+
+  /* Estilos para el botón de Logout */
+  #logout {
+    background-color: #e1be0e;
+    border: none;
+    color: white;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border-radius: 9px;
+  }
+
+
+  #agregar {
+    background-color:#e1be0e;
+    border: none;
+    color: white;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: none;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border-radius: 9px;
+    margin-left: 1em;
+  }
+ 
+
+  #calcular {
+    background-color: #e1be0e;
+    border: none;
+    color: white;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: none;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border-radius: 9px;
+    margin-left: 1px;
+  }
+
+  #limpiar{
+    background-color:#e1be0e;
+    border: none;
+    color: white;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: none;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border-radius: 9px;
+   
+  }
+  #info {
+    display: none;
+  }
+
+  /* Estilos para centrar la imagen */
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; /* Ajusta esto según tu diseño */
+    margin-bottom: 10px; /* Ajusta este valor para mover la imagen más arriba */
+    background-color: #1b43c7;
+}
+  
+  
